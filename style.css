@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./img/body-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  font-family: "Shadows Into Light Two", cursive, sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 3px 3px #111;
+  padding: 50px 0 50px 0;
+}
+
+header,
+form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  font-family: "Shadows Into Light Two", cursive, sans-serif;
+  padding: 15px;
+  font-size: 35px;
+  border: none;
+  background-color: #fff;
+  text-align: center;
+}
+
+form button {
+  color: #fff;
+  background-color: green;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+form button:hover {
+  color: #fff;
+  background-color: #5f9ea0;
+  transform: rotate(360deg);
+}
+
+.shop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.shop-list {
+  font-size: 35px;
+  list-style: none;
+  min-width: 450px;
+  color: #111;
+}
+
+.shop {
+  margin: 15px;
+  background: #f1ebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.shop li {
+  flex: 1;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.complete-btn,
+.delete-btn {
+  height: 60px;
+  font-size: 20px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.delete-btn {
+  background-color: red;
+}
+
+.delete-btn:hover {
+  background-color: #111;
+  color: red;
+  transform: scale(1.1);
+}
+
+.complete-btn:hover {
+  background-color: #111;
+  color: green;
+  transform: scale(1.1);
+}
+
+.fa-trash,
+.fa-check-circle {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  margin: 20px;
+  font-size: 2rem;
+  text-shadow: 2px 2px #111;
+}
+
+/*mobile settings */
+
+@media only screen and (max-width: 600px) {
+  form input,
+  form button {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .shop-list {
+    min-width: 100%;
+  }
+}
